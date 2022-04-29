@@ -1,0 +1,128 @@
+/* root */
+:root {
+  --font-weight-800       : 800;
+  --font-size-text        : 28px;
+  --font-family           : 'Manrope', sans-serif;
+  --color-primary-one     : hsl(193, 38%, 86%);
+  --color-primary-two     : hsl(150, 100%, 66%);
+  --color-grayish-blue    : hsl(217, 19%, 38%);
+  --color-dark-gray-blue  : hsl(217, 19%, 24%);
+  --color-dark-blue       : hsl(218, 23%, 16%);
+  --color-buttons         : hsl(150, 100%, 66%);
+}
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+body {
+	background: white;
+	line-height: 1;
+	color: black;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+
+/* Global Styles */
+* {
+  font-family: var(--font-family);
+}
+
+body {
+  background-color:var(--color-dark-blue);
+}
+
+.none {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Main Styles */
+
+#advice-container {
+  display: grid;
+  place-content: center;
+  margin: auto;
+  border: none;
+  background-color:var(--color-dark-gray-blue);
+  border-radius: 15px;
+  padding: 20px;
+  width: 400px;
+}
+
+h4 {
+  color: var(--color-primary-two);
+  font-size: 10px;
+  letter-spacing: 3px;
+  padding: 1.5rem 0;
+}
+
+blockquote {
+  width: 400px;
+  font-size: var(--font-size-text);
+  color:var(--color-primary-one);
+  margin: auto;
+  margin-bottom: 1.5rem;
+  font-weight: var(--font-weight-800);
+  line-height: 1.4;
+}
+
+.pattern-divider img {
+  width: 350px;
+  margin-bottom: 1.5rem;
+}
+
+.dice-container {
+  margin: 0 auto;
+}
+
+button {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 9999rem;
+  border: none;
+  background-color: var(--color-primary-two);
+  position: absolute;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  box-shadow: 0 0 15px var(--color-primary-two);
+}
+
+
+/* Footer Styles */
+footer {
+    font-size: 11px;
+    margin-top: 60px;
+    color:var(--color-primary-one);
+  }
+
+  footer a {
+    color:var(--color-primary-two);
+  }

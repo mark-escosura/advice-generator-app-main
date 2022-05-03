@@ -21,7 +21,7 @@ async function fetchAdvice() {
 fetchAdvice();
 
 // This will run asynchronously when the the button is clicked.
-diceButton.addEventListener('click', async () => {
+diceButton.addEventListener('click', () => {
   loader.classList.remove('none');
   blockquote.classList.add('none');
   setTimeout(() => {

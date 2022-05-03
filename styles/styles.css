@@ -50,6 +50,11 @@ blockquote, q {
 
 body {
   background-color:var(--color-dark-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .none {
@@ -64,16 +69,13 @@ body {
 
 #advice-container {
   display: grid;
-  place-content: center;
-  margin: auto;
-  border: none;
   background-color:var(--color-dark-gray-blue);
   border-radius: 15px;
   padding: 20px;
-  width: 400px;
+  width: 500px;
 }
 
-h4 {
+h1 {
   color: var(--color-primary-two);
   font-size: 10px;
   letter-spacing: 3px;
@@ -81,7 +83,7 @@ h4 {
 }
 
 blockquote {
-  width: 400px;
+  width: 450px;
   font-size: var(--font-size-text);
   color:var(--color-primary-one);
   margin: auto;
@@ -125,4 +127,20 @@ footer {
 
   footer a {
     color:var(--color-primary-two);
+  }
+
+  /* Mobile Styles */
+
+  @media screen and (max-width: 700px) and (min-width: 300px) {
+    #advice-container {
+      width: 400px;
+    }
+
+    blockquote {
+      width: 350px;
+    }
+
+    .pattern-divider img {
+      width: 350px;
+    }
   }

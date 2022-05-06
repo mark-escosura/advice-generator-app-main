@@ -131,16 +131,31 @@ footer {
 
   /* Mobile Styles */
 
-  @media screen and (max-width: 700px) and (min-width: 300px) {
+  @media screen and (max-width: 700px) and (min-width: 401px)  {
     #advice-container {
-      width: 400px;
+      width: 300px;
     }
 
     blockquote {
-      width: 350px;
+      width: 280px;
     }
 
     .pattern-divider img {
-      width: 350px;
+      width: 280px;
+    }
+  }
+
+
+  @media screen and (max-width: 400px) {
+    #advice-container {
+      width: 270px;
+    }
+
+    blockquote {
+      width: 250px;
+    }
+
+    .pattern-divider img {
+      width: 250px;
     }
   }
